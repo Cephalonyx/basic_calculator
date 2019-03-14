@@ -1,28 +1,25 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+/**
+ * @author Jacob Ramsaywak
+ * @version March 14, 2019
+ *
+ * Filename: App.js
+ * Description: Main React App file
+ *
+ *
+ */
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
-}
+import React from 'react';
+import './styles/styles.css';
+import Calculator from './components/Calculator/Calculator';
 
-export default App;
+
+
+
+const app = () => (
+    <div className="app">
+      <Calculator />
+    </div>
+
+
+);
+export default app;

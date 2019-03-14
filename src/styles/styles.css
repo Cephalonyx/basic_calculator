@@ -1,0 +1,128 @@
+/* CSS RESET */
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+
+html{
+    font-size: 65%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    font-family: inherit;
+}
+
+/* VARIABLES */
+
+:root{
+    --color-white: #ffffff;
+    --color-grey: rgba(47, 47, 46, 0.84);
+
+    --color-purple: #711c91;
+    --color-pink: #9e49ea;
+    --color-teal-transparent: rgba(10, 189, 198, 0.9);
+    --color-teal: rgba(0, 108, 74, 0.36);
+    --color-blue-transparent: rgba(19, 62, 124, 0.9);
+    --color-darkblue: #091833;
+    --color-black: #000000;
+
+    --shadow: rgba(0, 0, 0, 0.4);
+
+
+}
+
+.app {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, var(--color-teal-transparent), var(--color-blue-transparent), var(--color-purple));
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    height: 80vh;
+    width: 25%;
+    box-shadow: 0 2rem 4rem var(--shadow);
+    background-color: var(--color-darkblue);
+}
+
+.result {
+    height: 19vh;
+    font-size: 8rem;
+    font-weight: 600;
+    /* The following will display the value at the bottom-right of the container */
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.equation {
+    height: 6vh;
+    font-size: 2.5rem;
+
+    /* Again, the following will display the value at the bottom-right of the container */
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.screen {
+    height: 25vh;
+    width: 100%;
+    padding: 0 2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    color: lightgray;
+    background: #535963;
+}
+
+.numberrow {
+    height: 11vh; /* (80vh calculator - 25vh screen) / 5 keypadRow components = 11vh */
+    width: 100%;
+    display: flex; /* To control the dimension */
+    color: white;
+}
+
+.numberpad {
+    height: 55vh;
+    width: 100%;
+}
+
+
+.button {
+    width: 25%;
+    height: 100%;
+    font-size: 3rem;
+    font-family: inherit;
+    background-color: var(--color-darkblue);
+    color: darkgoldenrod;
+    border: 1px solid transparent;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s;
+}
+.button:hover {
+    color:yellow;
+    background-color: var(--color-blue-transparent);
+}
+.button:active {
+    transform: scale(.95);
+}
+
+/* Not implemented
+.button--primary {
+    color: #51ff48;
+}
+.button--operator {
+    color: white;
+}
+*/
