@@ -12,7 +12,7 @@
 /build
 
 # misc
-.idea
+/.idea
 *.iml
 .DS_Store
 .env.local
