@@ -8,6 +8,7 @@ Things I learned:
 - Making a functional componenet into a stateful one.
 - Usage of props, spreading props
 - Manipulating state
+- (Modulo is a feature, not a bug :) )
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
