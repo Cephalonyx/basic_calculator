@@ -1,5 +1,7 @@
 This is my first React project. It's a pretty basic calculator.
 
+View it here! https://cephalonyx.github.io/basic_calculator/
+
 Things I learned:
 - Introduced to JSX and how it works with React components
 - Components in general: functional and stateful
