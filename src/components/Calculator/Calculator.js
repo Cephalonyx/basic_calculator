@@ -18,6 +18,7 @@ class Calculator extends React.Component {
     };
 
     //Start of Calculator Events
+    //I would redo all of this logic if I had to do it again, and make it way prettier.
     onButtonPress = event => {
         let equation = this.state.equation;
         const pressedButton = event.target.innerHTML;
