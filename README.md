@@ -10,6 +10,9 @@ Things I learned:
 - Manipulating state
 - (Modulo is a feature, not a bug :) )
 
+To do:
+- Make mobile friendly
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
